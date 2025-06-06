@@ -1,6 +1,6 @@
 package liskovsubstitution.baddesign;
 
-public class Ostrich extends Bird{
+public class Ostrich extends Bird {
 
     @Override
     protected void eat() {
