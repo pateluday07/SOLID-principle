@@ -2,11 +2,10 @@ package liskovsubstitution.gooddesign;
 
 public class Ostrich extends Bird {
 
-    @Override
-    protected void eat() {
-        System.out.println("Ostrich is eating");
+    private static final String NAME = "Ostrich";
+
+    public Ostrich() {
+        super(NAME);
     }
 
-    // Ostrich cannot fly, so we do not inherit the fly method from FlyingBird
-    // This class does not implement a fly method, adhering to Liskov Substitution Principle
 }

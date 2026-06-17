@@ -1,6 +1,6 @@
-package liskovsubstitution.gooddesign;
+package liskovsubstitution.baddesign;
 
-public class Sparrow extends FlyableBird {
+public class Sparrow extends Bird {
 
     private static final String NAME = "Sparrow";
 

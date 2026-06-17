@@ -2,12 +2,18 @@ package liskovsubstitution.baddesign;
 
 public class Bird {
 
-    protected void eat() {
-        System.out.println("Bird is eating");
+    private String name;
+
+    protected Bird(String name) {
+        this.name = name;
     }
 
-    protected void fly() {
-        System.out.println("Bird is flying");
+    public void eat() {
+        System.out.println(name.concat(" is eating"));
+    }
+
+    public void fly() {
+        System.out.println(name.concat(" is flying"));
     }
 
 }
