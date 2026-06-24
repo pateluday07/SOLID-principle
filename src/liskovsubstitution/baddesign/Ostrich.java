@@ -11,7 +11,7 @@ public class Ostrich extends Bird {
     // Ostriches cannot fly, so we override the fly method to throw an exception
     @Override
     public void fly() {
-        throw new UnsupportedOperationException("Ostriches cannot fly");
+        throw new UnsupportedOperationException("Ostriches can not fly");
     }
 
 }

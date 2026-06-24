@@ -9,11 +9,18 @@ public class LiskovSubstitutionGoodTester {
 
     public static void main(String[] args) {
         Bird ostrich = new Ostrich();
-        ostrich.eat();
+        simulateBirdLife(ostrich);
 
-        System.out.println();
         FlyableBird sparrow = new Sparrow();
-        sparrow.eat();
-        sparrow.fly();
+        simulateFlyableBirdLife(sparrow);
+    }
+
+    public static void simulateBirdLife(Bird bird) {
+        bird.eat();
+    }
+
+    public static void simulateFlyableBirdLife(FlyableBird bird) {
+        bird.eat();
+        bird.fly();
     }
 }

@@ -8,19 +8,15 @@ public class LiskovSubstitutionBadTester {
 
     public static void main(String[] args) {
         Bird sparrow = new Sparrow();
-        sparrow.eat();
-        sparrow.fly();
+        simulateBirdLife(sparrow);
 
-        System.out.println();
         Bird ostrich = new Ostrich();
-        ostrich.eat();
-        try {
-            ostrich.fly();
-        } catch (UnsupportedOperationException e) {
-            System.out.println(e.getMessage());
-        }
-
-
-
+        simulateBirdLife(ostrich);
     }
+
+    public static void simulateBirdLife(Bird bird) {
+        bird.eat();
+        bird.fly();
+    }
+
 }
