@@ -1,6 +1,6 @@
 package interfacesegregation.baddesign;
 
-public interface Machine {
+public interface MultifunctionDevice {
 
     void print();
 

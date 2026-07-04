@@ -1,6 +1,6 @@
 package interfacesegregation.baddesign;
 
-public class SimplePrinter implements Machine {
+public class SimplePrinter implements MultifunctionDevice {
 
     @Override
     public void print() {
@@ -9,12 +9,12 @@ public class SimplePrinter implements Machine {
 
     @Override
     public void scan() {
-        throw new UnsupportedOperationException("Printer does not support scanning");
+        throw new UnsupportedOperationException("Scanning is not supported by SimplePrinter");
     }
 
     @Override
     public void fax() {
-        throw new UnsupportedOperationException("Printer does not support faxing");
+        throw new UnsupportedOperationException("Faxing is not supported by SimplePrinter");
     }
 
 }
